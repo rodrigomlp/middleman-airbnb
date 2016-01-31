@@ -32,7 +32,7 @@ activate :autoprefixer
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
 ["anne", "seb", "romain"].each do |name|
-  proxy "/flats/#{name}.html", "/show.html", :locals => { :owner => name }, :ignore => true
+  proxy "/flats/#{name}.html", "/flats/show.html", :locals => { :owner => name }, :ignore => true
 end
 
 ###
