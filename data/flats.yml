@@ -1,18 +1,18 @@
-- name: Seb's home
-  description: Charming room with patio
+seb:
+  name: Sebastien's home
+  description: Charming room in Montmartre
   owner_picture: seb.jpg
-  city: Paris
-  link: show.html
-  picture: card-paris.jpg
-- name: Anne's home
+  city: "Paris, France"
+  picture: background-paris.jpg
+anne:
+  name: Anne's home
   description: Lovely house
   owner_picture: anne.jpg
-  city: Paris
-  link: show.html
-  picture: card-brussels.jpeg
-- name: Romain's home
+  city: "Brussels, Belgium"
+  picture: background-brussels.jpeg
+romain:
+  name: Romain's home
   description: Nice flat in Piccadilly
   owner_picture: romain.jpeg
-  city: London
-  link: show.html
-  picture: card-london.jpeg
+  city: "London, UK"
+  picture: background-london.jpg

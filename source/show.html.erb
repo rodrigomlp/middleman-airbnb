@@ -1,8 +1,8 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: Airbnb flat
 ---
 
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 50%), url('images/background.jpg');height: 50vh;">
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 50%), url('<%= image_path data.flats[owner].picture %>'); height: 50vh; background-position: center;">
 </div>
 <div class="header-flat">
   <div class="container">
@@ -10,12 +10,12 @@ title: Le Wagon Middleman boilerplate
       <div class="col-xs-12 col-sm-6 col-sm-offset-1">
         <div class="header-flat-details">
           <div class="header-flat-owner  text-center">
-            <%= image_tag "seb.jpg", class: "img-circle", width: "80" %>
-            <p>Sebastien</p>
+            <%= image_tag data.flats[owner].owner_picture, class: "img-circle", width: "80" %>
+            <p><%= owner.capitalize %></p>
           </div>
           <div class="header-flat-name">
-            <h1>Cosy Studio, Central and Equipped</h1>
-            <p>Paris, France</p>
+            <h1><%= data.flats[owner].description %></h1>
+            <p><%= data.flats[owner].city %></p>
             <i class="fa fa-star" style="color: #ffb400"></i>
             <i class="fa fa-star" style="color: #ffb400"></i>
             <i class="fa fa-star" style="color: #ffb400"></i>
